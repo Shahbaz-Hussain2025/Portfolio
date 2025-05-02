@@ -9,7 +9,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    opacity: 1; /* Ensure full opacity */
+    opacity: 1; 
 }
 
 .footer-grid {
