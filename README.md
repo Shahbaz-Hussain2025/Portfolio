@@ -23,7 +23,7 @@ A modern and responsive tech website clone built using **React** and **Vite**. T
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/tech-website-clone.git
+git clone https://github.com/Shahbaz-Hussain2025/Tech-Website-Clone-in-React.js.git
 
 # Navigate to the project directory
 cd tech-website-clone
@@ -59,5 +59,5 @@ GitHub Pages (with proper config)
 🙌 Author
 Shahbaz Hussain
 📧 hussain.shahbazhere@gmail.com
-💼 Upwork Profile (if any)
-🐙 GitHub
+💼 LinkedIn Profile https://www.linkedin.com/in/shahbaz-hussain-956308326/
+
