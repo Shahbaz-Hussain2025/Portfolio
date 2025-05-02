@@ -1,0 +1,91 @@
+.home-section {
+    display: flex;
+    flex-direction: column; /* Mobile view */
+    padding-top: 100px;
+    align-items: center;
+    background-color: #007BFF; /* Blue background */
+    padding: 2rem;
+    color: white;
+    gap: 2rem;
+    position: relative; /* For SVG background positioning */
+    /* Add the orange SVG as a background image */
+    background-image: url('/oranged.svg'); /* Adjusted path for React */
+    background-repeat: no-repeat;
+    background-position: right top; /* Align SVG to the right */
+  padding: 100px;
+}
+
+.home-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.home-content h1 {
+    margin-bottom: 1rem;
+    font-size: 55px;
+}
+
+.home-content p {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.home-content button {
+    width: 205px;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: orangered;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home-content button:hover {
+    background-color: black;
+    color: white;
+}
+
+.home-image img {
+    width: 544px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cont-head h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* Responsive for tablets & desktops */
+@media (min-width: 768px) {
+    .home-section {
+        flex-direction: row;
+     justify-content: space-around;
+     
+      
+    }
+}
+.cont-second button {
+    width: 214px;
+    padding: 16px;
+    font-size: 28px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+.cont-second button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+  

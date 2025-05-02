@@ -1,0 +1,467 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column; /* Mobile view */
+    padding-top: 100px;
+    align-items: center;
+    background-color: #007BFF; /* Blue background */
+    padding: 2rem;
+    color: white;
+    gap: 2rem;
+    position: relative; /* For SVG background positioning */
+    /* Add the orange SVG as a background image */
+    background-image: url('/oranged.svg'); /* Adjusted path for React */
+    background-repeat: no-repeat;
+    background-position: right top; /* Align SVG to the right */
+  padding: 100px;
+}
+
+.home-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.home-content h1 {
+    margin-bottom: 1rem;
+    font-size: 55px;
+}
+
+.home-content p {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.home-content button {
+    width: 205px;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: orangered;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.home-content button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.home-image img {
+    width: 544px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cont-head h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* Responsive for tablets & desktops */
+@media (min-width: 768px) {
+    .home-section {
+        flex-direction: row;
+     justify-content: space-around;
+     
+      
+    }
+}
+  
+ /* content section css start here */
+ .main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.cont {
+
+    width: 400px;
+    flex: 1 1 400px;
+    display: flex;
+  
+    min-height: 400px; /* Match the height of the image container */
+}
+
+.cont img {
+    width: 100%;
+    max-width: 593px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.cont-second {
+    width: 400px;
+    flex: 1 1 500px;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+  
+}
+
+.cont-second span {
+    color: orangered;
+    font-size: 17px;
+}
+
+.cont-second h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.cont-second p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: rgb(175, 164, 164);
+}
+
+.checklist-container {
+   
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #333;
+}
+
+.checklist .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+    .main-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .cont img {
+        max-width: 100%; /* Ensure image fits on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .cont-second {
+        flex: 1 1 100%;
+    }
+
+    .cont-second h1 {
+        font-size: 28px;
+        color: lightgray;
+    }
+
+    .cont-second p {
+        font-size: 22px;
+        color: lightgrey;
+    }
+}
+
+
+  .button-wrapper {
+   margin-bottom: 15px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+  }
+  
+  .cont-button {
+    width: 205px;
+    background-color: orangered;
+    color: white;
+    font-size: 28px;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+  
+    /* Smooth transitions for transform and background */
+    transition: background-color 0.3s, transform 0.3s;
+  
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .cont-button:hover {
+    background-color: black;
+    color: white;
+  
+    /* Move the button upward slightly on hover */
+    transform: translateY(-5px);
+  }
+  
+  .cont-button:active {
+    /* Slightly lower the button when clicked */
+    transform: translateY(2px);
+  }
+  
+    /* project made  then show images ion home page */
+    .project {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      .project h1 {
+        font-size: 50px;
+      }
+      
+      .project-img {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* space between images */
+        flex-wrap: wrap; /* makes it responsive */
+      }
+      
+      .project-img div {
+        text-align: center;
+      }
+      
+      .project-img img {
+        margin-top: 30px;
+        width: 500px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        backface-visibility: hidden;
+        transform: translateZ(0); /* triggers GPU acceleration */
+      }
+      
+      .project-img img:hover {
+        transform: scale(1.05); /* smooth zoom */
+        opacity: 0.5; /* slightly dim the image on hover */
+        cursor: pointer;
+      }
+      
+      
+      
+      .project-img p {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #333;
+      }
+       /* main feature css will be start here */
+       .main-feature {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap into multiple rows */
+        justify-content:center; /* Space cards evenly in the row */
+       /* Space between cards */
+        padding: 40px 20px;
+        background-color: #f5f5f5;
+        margin-bottom: 80px; 
+        margin-top: 60px;/* Light gray background for section */
+    }
+    
+    .card-feature {
+        background-color: white;
+        width: 351px; /* 3 cards per row, accounting for gap (20px total gap / 3 cards = ~14px per card) */
+        padding: 30px 20px;
+        margin: 10px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: left;
+        transition: transform 0.3s;
+        box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    }
+    
+    .card-feature:hover {
+        transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+        color: orangered;
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .card-feature h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .card-feature p {
+        font-size: 20px;
+        color: #444;
+        line-height: 1.5;
+    }
+    
+    /* Responsive for medium screens */
+    @media (max-width: 1100px) {
+        .card-feature {
+            width: calc(50% - 10px); /* 2 cards per row, accounting for gap */
+        }
+    }
+    
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+        .card-feature {
+            width: 100%; /* 1 card per row */
+        }
+    }
+
+    .client h1{
+         text-align: center;
+         align-items: center;
+         font-size: 45px;
+         color: black;
+         margin-top: 30px;
+         margin-bottom: 10px;
+    }
+    .main-client {
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 40px 20px;
+        background-color: Hawkins; /* Light gray background */
+    }
+    
+    .client-card {
+        margin: 15px;
+        background-color: white;
+        width: 100%;
+        height: 400px;
+        max-width: 600px; /* Limit the width for better readability */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    }
+    
+    .star-rating {
+        display: flex;
+        justify-content: center; /* Center the stars horizontally */
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .star {
+        color: #ff4500; /* Orange-red color for stars */
+        font-size: 18px;
+    }
+    .client-card p {
+        font-size: 18px;
+        color: #444;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .thumbs-up {
+        color:gold; /* Blue color for thumbs-up */
+        font-size: 18px;
+        vertical-align: middle; /* Align emoji with text */
+        margin-left: 5px;
+    }
+    
+    .client-card h3 {
+        font-size: 13px;
+   text-align: center;
+        color: #333;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+    
+    .client-info {
+        font-size: 16px;
+        color: #666;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .client-card {
+            padding: 20px;
+        }
+    
+        .client-card p {
+            font-size: 16px;
+        }
+    
+        .client-card h3 {
+            font-size: 20px;
+        }
+    
+        .client-info {
+            font-size: 14px;
+        }
+    }
+      
+  .contact-section{
+    background-color: orangered;
+    padding: 80px;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-section h1{
+     font-size: 50px;
+     color: white;
+  }
+  .contact-section p{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+  }
+  .contect {
+    width: 202px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* smooth movement */
+  }
+  
+  .contect:hover {
+    transform: translateY(-5px); /* moves the button 5px upwards */
+    color: orangered;
+     background-color: white;
+  }
+  

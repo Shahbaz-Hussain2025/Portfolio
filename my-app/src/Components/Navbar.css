@@ -1,0 +1,85 @@
+/* components/Navbar.css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color:#007BFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+  }
+  
+  .navbar-logo img {
+    height: 30px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: rgb(81, 175, 212);
+      padding: 10px 0;
+      gap: 10px;
+      text-decoration: none;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu li {
+      text-align: center;
+   
+      padding: 10px 0;
+    }
+  }
+  

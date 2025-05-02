@@ -1,0 +1,130 @@
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    justify-content: center;
+    background-color: #f0f2f5; /* Light gray background like the screenshot */
+}
+
+.pricing-card {
+    flex: 1 1 300px;
+    max-width: 600px;
+    height: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color:black;
+}
+
+.pricing-card{
+    background-color: white;
+}
+
+.card-label {
+    color: #ff4500; /* Orange for both labels to match screenshot */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: black;
+}
+
+.description {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checklist .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.get-started-btn {
+    width: 200px;
+    padding: 15px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.get-started-btn:hover{
+    background-color: #007bff;
+}
+.btn{
+    width: 200px;
+    padding: 15px;
+    background-color:#ff4500;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;  
+}
+
+.get-started-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+.line{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .pricing-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .price {
+        font-size: 36px;
+    }
+
+    .checklist li {
+        font-size: 14px;
+    }
+
+    .get-started-btn {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,118 @@
+footer {
+    background-color: #000;
+    color: #a0a0a0;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1; /* Ensure full opacity */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
+    color: #ff4500;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-logo h2 {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 1; /* Ensure paragraph is fully opaque */
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    opacity: 1; /* Ensure links are fully opaque */
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-column ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info {
+    color: #a0a0a0;
+    transition: color 0.3s ease;
+    opacity: 1; /* Ensure contact info is fully opaque */
+}
+
+.contact-info:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #a0a0a0;
+    font-size: 14px;
+    opacity: 1; /* Ensure copyright is fully opaque */
+}
+
+@media (max-width: 767px) {
+    .footer-text,
+    .footer-column ul li a,
+    .contact-info {
+        font-size: 14px;
+    }
+
+    .footer-logo span,
+    .footer-logo h2 {
+        font-size: 20px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+}
